@@ -30,11 +30,10 @@ const wallets = [
       ],
     },
   }),
-  createWallet("io.metamask"),
-  createWallet("com.coinbase.wallet"),
-  createWallet("me.rainbow"),
-  createWallet("io.rabby"),
-  createWallet("io.zerion.wallet"),
+  createWallet('com.ledger'),
+  createWallet('com.safepal'),
+  createWallet('com.secuxtech'),
+  createWallet('co.arculus'),
 ];
 
 const navItems = ["Home", "P-2-P", "VS-AI ","Market-Place", "profile"];
@@ -114,6 +113,7 @@ const Navbar: React.FC = () => {
                 size: "compact",
                 showThirdwebBranding: false,
               }}
+              showAllWallets={false}
             />
           </div>
 
